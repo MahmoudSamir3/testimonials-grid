@@ -1,0 +1,210 @@
+/* ========== Root Variables ========== */
+:root {
+  --Purple500: hsl(263, 55%, 52%);
+  --Purple300: hsl(264, 82%, 80%);
+  --White: hsl(0, 0%, 100%);
+  --Grey200: hsl(0, 0%, 81%);
+  --Grey400: hsl(224, 10%, 45%);
+  --Grey500: hsl(217, 19%, 35%);
+  --Darkblue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+  --bg: hsl(0, 0%, 96%);
+}
+
+/* ========== Reset Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Global Styles ========== */
+body {
+  font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+  background-color: var(--bg);
+  padding: 30px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ========== Grid Layout for Testimonials Section ========== */
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;    
+}
+
+/* ========== Card Styling ========== */
+.card {
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header (image + name + job) */
+.mini-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.coder {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.job {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Feedback Title */
+.feedback {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Testimonial Text */
+.detailed {
+  line-height: 1.6;
+  font-size: 15px;
+  color: var(--Grey400);
+}
+
+/* ========== Specific Cards Layout and Colors ========== */
+.danial {
+  background-color: var(--Purple500);
+  grid-column: 1 / 3;
+  grid-row: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.jonathan {
+  background-color: var(--Grey500);
+  grid-column: 3 / 4;
+}
+
+.kira {
+  background-color: var(--White);
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+.jeanette {
+  background-color: var(--White);
+}
+
+.patrick {
+  background-color: var(--Darkblue);
+  grid-column: 2 / 4;
+}
+
+/* ========== Text Colors Based on Card ========== */
+.danial .name,
+.jonathan .name,
+.patrick .name,
+.danial .feedback,
+.jonathan .feedback,
+.patrick .feedback {
+  color: var(--White);
+}
+
+.jonathan .job,
+.patrick .detailed {
+  color: var(--Grey200);
+}
+
+.danial .detailed,
+.jonathan .detailed {
+  color: var(--White);
+}
+
+.patrick .job {
+  color: var(--Purple300);
+}
+
+.kira .name,
+.jeanette .name {
+  color: var(--Black);
+}
+
+.kira .job,
+.jeanette .job {
+  color: var(--Grey500);
+}
+
+.kira .feedback,
+.jeanette .feedback {
+  color: var(--Grey400);
+}
+
+.danial .job,
+.jonathan .job {
+  color: var(--White);
+}
+
+/* ========== Accessibility Focus Styles ========== */
+img:focus,
+.name:focus,
+.job:focus,
+.feedback:focus,
+.detailed:focus {
+  outline: 2px dashed #000;
+  outline-offset: 4px;
+}
+
+/* ========== Blur Effect for Specific Images ========== */
+.kira img,
+.jeanette img {
+  filter: blur(5px);
+}
+
+/* ========== Font Awesome ========== */
+.fa-solid{
+  font-size: 200px;  
+  color: var(--Purple300); 
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  z-index: -1;
+}
+
+/* ========== Responsive Design (Mobile) ========== */
+@media (max-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .feedback {
+    font-size: 18px;
+  }
+
+  .detailed {
+    font-size: 14px;
+  }
+
+  .fa-solid {
+    visibility: hidden;
+  }
+}
