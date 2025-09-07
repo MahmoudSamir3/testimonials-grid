@@ -1,0 +1,25 @@
+/* ========== Responsive Design (Mobile) ========== */
+@media (max-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .feedback {
+    font-size: 18px;
+  }
+
+  .detailed {
+    font-size: 14px;
+  }
+
+  .danial {
+    background-image: none;
+  }
+
+}

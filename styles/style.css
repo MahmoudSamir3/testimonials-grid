@@ -20,7 +20,7 @@
 
 /* ========== Global Styles ========== */
 body {
-  font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+  font-family: "Barlow Semi Condensed", Arial, sans-serif;
   background-color: var(--bg);
   padding: 30px;
 }
@@ -28,12 +28,12 @@ body {
 img {
   width: 50px;
   height: 50px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-/* ========== Grid Layout for Testimonials Section ========== */
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -42,18 +42,12 @@ section {
   filter: drop-shadow(50px 50px 25px #c5c5c5);
 }
 
-/* article {
-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-} */
-
-/* ========== Card Styling ========== */
 .card {
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Header (image + name + job) */
 .mini-cont {
   display: flex;
   align-items: center;
@@ -76,26 +70,23 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   opacity: 0.8;
 }
 
-/* Feedback Title */
 .feedback {
   font-size: 20px;
   margin-bottom: 15px;
   font-weight: 600;
 }
 
-/* Testimonial Text */
 .detailed {
   line-height: 1.6;
   font-size: 15px;
   color: var(--Grey400);
 }
 
-/* ========== Specific Cards Layout and Colors ========== */
 .danial {
   background-color: var(--Purple500);
-  grid-column: 1 / 3;
+  grid-column: 1/3;
   grid-row: 1;
-  background-image: url('images/bg-pattern-quotation.svg');
+  background-image: url("images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: right 100px top 0px;
   background-size: 125px;
@@ -103,13 +94,13 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 
 .jonathan {
   background-color: var(--Grey500);
-  grid-column: 3 / 4;
+  grid-column: 3/4;
 }
 
 .kira {
   background-color: var(--White);
-  grid-column: 4 / 5;
-  grid-row: 1 / 3;
+  grid-column: 4/5;
+  grid-row: 1/3;
 }
 
 .jeanette {
@@ -118,7 +109,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 
 .patrick {
   background-color: var(--Darkblue);
-  grid-column: 2 / 4;
+  grid-column: 2/4;
 }
 
 /* ========== Text Colors Based on Card ========== */
@@ -188,21 +179,16 @@ img:focus,
     flex-direction: column;
     gap: 20px;
   }
-
   .card {
     padding: 24px;
   }
-
   .feedback {
     font-size: 18px;
   }
-
   .detailed {
     font-size: 14px;
   }
-
   .danial {
     background-image: none;
   }
-
-}
+}/*# sourceMappingURL=style.css.map */

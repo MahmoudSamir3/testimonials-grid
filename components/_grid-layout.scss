@@ -1,0 +1,7 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  filter: drop-shadow(50px 50px 25px #c5c5c5);
+}

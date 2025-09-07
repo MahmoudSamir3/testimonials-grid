@@ -1,0 +1,21 @@
+.mini-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.coder {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.job {
+  font-size: 14px;
+  opacity: 0.8;
+}
